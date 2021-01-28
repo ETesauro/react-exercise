@@ -41,7 +41,7 @@ export default function Header() {
                     </h1>
 
                     <ScrollLink to="stack" smooth={true}>
-                        <button className=" animate-float bg-indigo-500 px-10 py-3 text-xl uppercase mt-10 rounded-lg flex items-center justify-center">
+                        <button className={`${animated ? '' : 'translate-y-10 opacity-0'} transform transition duration-2000 bg-indigo-500 px-10 py-3 text-xl uppercase mt-10 rounded-lg flex items-center justify-center`}>
                             {content.header.btnText} <KeyboardArrowDownIcon />
                         </button>
                     </ScrollLink>
